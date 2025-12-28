@@ -1,0 +1,45 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Furniture",
+        "Electronics",
+        "Books",
+        "Utensils"
+      ],
+      "description": "Product category"
+    },
+    "daily_rent": {
+      "type": "number",
+      "description": "Daily rental price in INR"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Available",
+        "Rented",
+        "Maintenance"
+      ],
+      "default": "Available"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Product image URL"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "daily_rent"
+  ]
+}

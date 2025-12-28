@@ -1,0 +1,26 @@
+{
+  "name": "Customer",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "trust_score": {
+      "type": "number"
+    },
+    "rental_history": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "location",
+    "trust_score"
+  ]
+}
